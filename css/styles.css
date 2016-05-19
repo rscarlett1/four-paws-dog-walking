@@ -1,0 +1,184 @@
+body {
+  font-family: verdana, sans-serif;
+  margin: 0em;
+  padding: 0em;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+nav {
+  box-sizing: border-box;
+  background-color: #2f184e;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  box-sizing: border-box;
+}
+
+#menu {
+  display: none;
+  /*padding: 0;*/
+  /*width: 50%;*/
+  /*margin: 0 auto;*/
+}
+nav:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+#logo {
+  width: 10%;
+  
+  min-width: 100px;
+  float: left;
+  padding: 10px;
+}
+
+#footprint{
+ /* display: none;*/
+}
+
+#hamburger {
+  float: right;
+  padding-right: 5px;
+}
+
+#facebook {
+  position: absolute;
+  right: 100px;
+  top: 3%;
+  border-radius: 5px 20px 5px;
+}
+
+#twitter {
+  position: absolute;
+  right: 100px;
+  top: 50%;
+  border-radius: 5px 20px 5px;
+}
+
+
+
+
+
+
+
+@media all and (min-width: 600px) {
+
+  #logo{
+    /*width:  100px;*/
+    /*margin-right: 10px;*/
+  }
+
+  nav {
+    margin: 0 auto;
+    
+  }
+
+  #menu {
+    display: block;
+    margin: 0 auto;
+  }
+
+  #hamburger {
+    display: none;
+  }
+
+  #menu ul {
+    text-align: center;
+    margin: 0 auto;
+    padding-left: 0;
+  }
+
+  #menu ul li {
+    box-sizing: border-box;
+    background-color: red;
+    display: inline-block;
+    color: #cfd0ca;
+    padding-top: 10%;
+    padding-right: 3%;
+   /* margin: 2em .3em;*/
+   /* margin-right: 2em;*/
+    font-size: 1em;
+    height: 100px;
+  }
+/*
+  #menu li:hover {
+    background-image: url(../img/footprint.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+*/
+  /*nav a:hover {
+
+    background: url("imgfootprint.jpg");
+    background-size: 80px 60px;
+    background-repeat: no-repeat;
+    padding-top: 40px;
+  }*/
+
+/*background: url("img_flwr.gif");
+    background-size: 80px 60px;
+    background-repeat: no-repeat;
+    padding-top: 40px;*/
+
+
+  #facebook {
+    position: absolute;
+    top: 3%;
+    border-radius: 5px 20px 5px;
+    right: .6%;
+  }
+
+  #twitter {
+    position: absolute;
+    top: 50%;
+    border-radius: 5px 20px 5px;
+    right: .6%;
+  }
+}
+
+
+
+@media all and (min-width: 878px) {
+
+  
+  #menu ul li {
+    padding: 10px 20px ;
+    font-size: 1.8em;
+  }
+
+  #hamburger {
+    display: none;
+  }
+
+  
+
+  
+}
+
+
+@media all and (min-width: 930px) {
+
+  
+}
+
+.clearfix:after, .clearfix:before {
+  content: block;
+  clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
