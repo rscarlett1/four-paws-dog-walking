@@ -4,7 +4,8 @@
 		<meta charset="utf8">
 		<title>Four Paws Dog Walking Website</title>
 		<meta name="Website for dog walking business" content="pricing with terms and conditions of the service">
-		<meta></meta>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
 		<link rel="stylesheet" href="css/unslider.css">
 		<link rel="stylesheet" href="css/unslider-dots.css">
 		<link rel="stylesheet" href="css/styles.css" >
@@ -15,19 +16,28 @@
 <nav>
 <!--This is the logo image here-->
 
-	
+	<div data-role="panel" id="myPanel">
 	<a href="home.html" id="logo">
 		<img  src="img/pink-logo.jpg" alt="Logo for Four Paws Dog Walking business" >
 	</a>
+	</div>
 	
 
 <!--This is the hamburger image here-->
-	
-	<a href="home.html">
-	<img id="hamburger" src="img/menu.png" alt="hamburger Logo" height="40px" width="40px">
-	</a>
-	
-<!--This is the navigation menu here-->	
+
+<header>
+  <button class="hamburger">&#9776;</button>
+  <button class="cross">&#735;</button>
+</header>
+
+<div class="menu">
+  <ul>
+    <a href="#"><li>About Us</li></a>
+    <a href="#"><li>Book With Us</li></a>
+    <a href="#"><li>Contact Us</li></a>
+    
+  </ul>
+</div> 
 
 	<ul id="menu">
 		<li><a href="index.html">Home</a></li>
@@ -56,34 +66,17 @@
 
 <main>
 	<section class="my-slider">
+	
 		<ul>
-			<ul>
-			<li><img class="slider" src="http://placehold.it/1400x400"></li>
-			<li><img class="slider" src="http://placehold.it/1400x400"></li>
-			<li><img class="slider" src="http://placehold.it/1400x400"></li>
-			<li><img class="slider" src="http://placehold.it/1400x400"></li>
-			<li><img class="slider" src="http://placehold.it/1400x400"></li>
-		<!-- </ul>
 			<li><img src="img/slider/dog.jpg" alt=""></li>
 			<li><img src="img/slider/dog1.jpg" alt=""></li>
 			<li><img src="img/slider/animal.jpg" alt=""></li>
 			<li><img src="img/slider/retreiver.jpg" alt=""></li>
 			<li><img src="img/slider/yorkshire.jpg" alt=""></li>
-		</ul> -->
+		</ul>
 	</section>
 
-<!--This is the start slider here-->
 
-
-		<!--<div id="banner">
-		<ul>
-			<li><img class="slider" src="http://placehold.it/1400x400"></li>
-			<li><img class="slider" src="http://placehold.it/1400x400"></li>
-			<li><img class="slider" src="http://placehold.it/1400x400"></li>
-			<li><img class="slider" src="http://placehold.it/1400x400"></li>
-			<li><img class="slider" src="http://placehold.it/1400x400"></li>
-		</ul>
-	</div>-->
 	
 	<section id="pricing-menu">
 		<h1>Dog Walk Pricing</h1>
@@ -180,6 +173,7 @@
 
 
 <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="js/script.js"></script>
 <script type="text/javascript" src="js/unslider.js"></script>	
 	<script>
 		jQuery(document).ready(function($) {
