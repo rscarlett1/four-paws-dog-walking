@@ -4,6 +4,13 @@ body {
   font-size: 1em;
   font-family: 'Noto Sans', sans-serif;
   margin:0;
+}
+
+html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      }
   
 }
 
@@ -122,6 +129,57 @@ header{
   margin:0 auto;
 }
 
+button.accordion {
+    background-color: #76639B;
+    color: #2F184e;
+    cursor: pointer;
+    padding: 18px;
+    width: 50%;
+    text-align: center;
+    border: .2em ridge #f2c9c7;
+    outline: none;
+    transition: 0.4s;
+    font-size: 1.5em;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+button.accordion.active, button.accordion:hover {
+    background-color: #cfd0ca;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+div.panel {
+    padding: 0 18px;
+    background-color: #b3d3ec;
+    display: none;
+    border: .2em ridge #f2c9c7;
+    width: 50%;
+}
+
+/* The "show" class is added to the accordion panel when the user clicks on one of the buttons. This will show the panel content */
+div.panel.show {
+    display: block !important;
+}
+
+div.panel table{
+  border: .1em ridge #2f184e;
+  border-collapse: collapse;
+  margin: 0 auto;
+
+}
+
+div.panel th{
+  padding:  0em 4.167em 0em 0em;
+}
+
+div.panel th, td{
+  text-align: center;
+}
+
+#map {
+  height:100%;
+}
+
 
 
 
@@ -142,7 +200,7 @@ header{
     
   }
 
-  #hamburger {
+  .hamburger {
     display: none;
   }
 
